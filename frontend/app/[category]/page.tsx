@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
+import { allowedCategories } from "@/app/constants"
 
-const allowedCategories = ['infra', 'backend', 'frontend']
+
 
 export async function generateStaticParams() {
   return allowedCategories.map((category) =>({

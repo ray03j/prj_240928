@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { CssBaseline } from "@mui/material"
+import { Box, CssBaseline } from "@mui/material"
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "@/app/theme";
 import { Header } from "@/components/Header/Header";
@@ -36,7 +36,9 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header />
-            {children}
+            <Box sx={{ mt: 8 }}>
+              {children}
+            </Box>
           </ThemeProvider>
       </body>
     </html>

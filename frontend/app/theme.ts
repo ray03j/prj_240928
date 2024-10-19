@@ -7,5 +7,16 @@ export const theme = createTheme({
     primary: {
       main: "#4b0082",
     },
-  }
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          '&.Mui-disabled': {
+            color: 'gray', // disabled 状態の文字色を指定
+          },
+        },
+      },
+    },
+  },
 })

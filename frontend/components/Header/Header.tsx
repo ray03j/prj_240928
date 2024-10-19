@@ -21,7 +21,9 @@ export const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Envild
+            <Link href={`/`}>
+              Envild
+            </Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {allowedCategories.map((item) => (
